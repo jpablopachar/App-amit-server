@@ -14,7 +14,7 @@ import { isValidObjectId } from 'mongoose'
  * @param res - Respuesta HTTP para devolver la información al cliente.
  * @returns {Promise<void>} No retorna un valor explícito, pero responde con JSON.
  */
-export const getUser = async (req: Request, res: Response) => {
+export const getUserController = async (req: Request, res: Response) => {
   try {
     const { id } = req.params
 

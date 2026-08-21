@@ -12,7 +12,7 @@ import { Request, Response } from 'express'
  * @param res - Respuesta HTTP para devolver la información al cliente.
  * @returns {Promise<void>} No retorna un valor explícito, pero responde con JSON.
  */
-export const getUsers = async (_: Request, res: Response) => {
+export const getUsersController = async (_: Request, res: Response) => {
   try {
     // Busca todos los usuarios en la colección.
     const users = await User.find()
