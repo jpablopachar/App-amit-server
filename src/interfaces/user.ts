@@ -3,6 +3,11 @@
  */
 export interface UserDb {
   /**
+   * Identificador único del usuario.
+   */
+  userId?: string
+
+  /**
    * Nombre del usuario.
    */
   name: string
@@ -15,7 +20,7 @@ export interface UserDb {
   /**
    * Contraseña del usuario.
    */
-  password: string
+  password?: string
 
   /**
    * Rol del usuario en la aplicación.
